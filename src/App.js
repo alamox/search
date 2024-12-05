@@ -75,7 +75,6 @@ function App() {
   const [data, setData] = useState([...people, ...calendar,...emails]);
   const [selection, setSelection] = useState(null);
   const [currentOption, setCurrentOption] = useState('all');
-  const [count, setCount] = useState(0);
 
   function handleClick(e){
     const op = e.target.name; //Name dentro de button se utiliza para especificar que boton se esta clicando
@@ -112,7 +111,6 @@ function App() {
       <button className={style.button} onClick={handleClick} name='calendar'>Calendar</button>
       <button className={style.button} onClick={handleClick} name='emails'>Emails</button>
 
-      <button onClick={() => setCount(count +1)}>{count}</button>
       {selection ? <div>You selected: {selection.title}</div> : ''}
       <SearchBar items={data} onItemSelected={handleItemSelected}/>
     </div>
