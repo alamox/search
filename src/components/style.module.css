@@ -1,0 +1,63 @@
+.button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #efefef;
+}
+
+.searchBarContainer{
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.styledInput{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 400px;
+    box-sizing: border-box;
+    border: solid 1px #222;
+    outline: none;
+}
+
+.resultsContainer{
+    position:absolute;
+    width: 400px;
+    background: white;
+    border: solid 1px #222;
+    border-top: solid 1px transparent;
+    margin-top: -3px;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+}
+
+.styleMarker{
+    background-color: yellow;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+.styledItem {
+    color:black;
+    display: block;
+    padding: 10px;
+    border: none;
+    width:100%;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.styledItem:hover {
+    background-color: #4c91ba;
+    color: white;
+}
+
+.styledItem:hover{
+    color:black;
+}
